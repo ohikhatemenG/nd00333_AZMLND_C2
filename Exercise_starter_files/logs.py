@@ -9,6 +9,9 @@ name = ""
 
 # load existing web service
 service = Webservice(name=name, workspace=ws)
+
+service.update(enable_app_insights=True0)
+
 logs = service.get_logs()
 
 for line in logs.split('\n'):
