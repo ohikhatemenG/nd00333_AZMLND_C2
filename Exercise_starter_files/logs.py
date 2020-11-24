@@ -10,7 +10,7 @@ name = ""
 # load existing web service
 service = Webservice(name=name, workspace=ws)
 
-service.update(enable_app_insights=True0)
+service.update(enable_app_insights=True)
 
 logs = service.get_logs()
 
